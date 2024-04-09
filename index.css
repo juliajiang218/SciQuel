@@ -1,0 +1,292 @@
+*{
+    font-family: monospace;
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0 10%;
+    padding: 0;
+    background-color: #fff;
+    color: white;
+    max-height: 1450px;
+    overflow: scroll;
+}
+
+/* header */
+.title{
+    padding: 0 2rem;
+}
+
+.title h1{ 
+    font-size: 2rem;
+    color: black;
+}
+
+@media only screen and (max-width: 540px){
+    .title h1{
+        font-size: 20px;
+    }
+}
+
+/* main */
+.main{
+    margin-top: 2%;
+}
+
+/* section 1 */
+.section1{
+    width: 90%;
+    margin: 0 auto;
+}
+.section1 .left-card{
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+    height: 350px;
+    
+}
+.section1:hover{
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+.center{
+    position: relative;
+    top: 15%;
+    background-image: linear-gradient(#1a6f8c,#63a59d);
+    border: 1px solid #1a6f8c;
+    border-radius: 8px;
+    z-index: 20;
+    width: 512px;
+    height: 240px;
+}
+.center-box{
+    margin: 5px 5px;
+}
+.center-box .tag{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 3px 6px;
+    border: 1px solid rgb(255, 157, 0);
+    background-color: rgb(255, 157, 0);
+    border-radius: 5px;
+    height: 7px;
+    width: fit-content;
+    text-align: center;
+    font-size: 10px;
+    font-family: "quicksand",sans-serif;
+}
+.center-box .title{
+    margin-top: 30px;
+    margin-left: 0;
+    font-family:  "Alegreya Sans SC",sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding-left: 10px;
+}
+.center-box .text{
+    margin: 0;
+    padding: 10px 30px 20px 10px;
+    font-family: "Quicksand",sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+}
+.contributor{
+    margin-top: 80px;
+    color: gray;
+}
+.right-card{ 
+    position: relative;
+    right: 10%;
+}
+
+.right-card img{
+    width: 700px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 540px) and (max-width:1280px) {
+
+    .main{
+        margin: 5% 1%;
+    }
+    .section1{
+        width: 90%;
+        margin: 0 auto;
+        background-image: url("https://www.sciquel.org/bobtail.png");
+        background-size: cover;
+        transition: all 2s linear;
+    }
+    .right-card{
+        display: none;
+    }
+    .center{
+        border: 1px solid white;
+        background-image: none;
+        background-color: white;
+        position: relative;
+        top: 30%;
+        width: 90%;
+        transition: all 2s linear;
+    }
+    .center-box .title, .center-box .text{
+        color: #1a6f8c;
+        font-size: 20px;
+    }
+    .contributor{
+        color: gray;
+        z-index: 30;
+        position: relative;
+        top: -20px;
+        left: 20px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .main{
+        margin: 0;
+    }
+    .right-card{
+        display: none;
+    }
+    .center{
+        width: 100%;
+        height: 70%;
+        transition: all 0.2s linear;
+    }
+    .center-box .title, .center-box .text{
+        font-size: 15px;
+    }
+    .contributor{
+        position: relative;
+        top: -80px;
+        left: 20px;
+        z-index: 30;
+        font-size: 12px;
+        color: blue;
+    }
+    *{
+        transition: all 0.5s linear;
+    }
+}
+/* section 2 */
+
+.section2{
+    width: 95%;
+    margin: 5% auto;
+    margin-bottom: 0;
+}
+
+.card{
+    background-color: rgb(248, 248, 255);
+    border: 1px solid gray;
+    width: 93%
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+.biology{
+    margin: 20px 10px;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid orange;
+    border-radius: 8px;
+    background-color: orange;
+    width: fit-content;
+    text-align: center;
+    font-size: 10px;
+    font-family: "quicksand",sans-serif;
+}
+.class-header{
+    margin: 10px 10px;
+}
+.geology{
+    margin: 20px 10px;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid green;
+    border-radius: 8px;
+    background-color: green;
+    width: fit-content;
+    text-align: center;
+    font-size: 10px;
+    font-family: "quicksand",sans-serif;
+}
+.article{
+    float: right;
+    margin-right: 10px;
+    font-size: 10px;
+    color: gray;
+}
+.card-title{
+    position: relative;
+    top: -205x;
+    font-family:  "Alegreya Sans SC",sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.card-title strong{
+    font-weight: 400;
+}
+.card-text{
+    font-family: "Quicksand",sans-serif;
+    font-size: 16px;
+}
+.date{
+    float: right;
+    margin-right: 3%;
+}
+.card-img-bottom{
+    margin: 0 1px 4px 8px;
+    width: 95%;
+    border-radius: 4px;
+}
+@media only screen and (min-width: 500px) and (max-width:1090px){
+    .section2{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        width: fit-content;
+        margin-bottom: 5%;
+        transition: all 2s linear;
+    }  
+}
+
+@media only screen and (max-width: 540px){
+    .section2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        max-height: 400px;
+        overflow: scroll;
+    }
+    .card{
+        width: fit-content;
+        margin-bottom: 5%;
+    }  
+}
+
+/* footer */
+.footer{
+    position: relative;
+    margin-top: 4%;
+    margin-right: 8%;
+    margin-bottom: 2%;
+    float: right;
+}
+
+.link a{
+    color: black;
+}
+.link i{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
